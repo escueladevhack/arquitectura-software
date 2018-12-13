@@ -1,40 +1,22 @@
-package curso.solid.unica_responsabilidad;
+package curso.solid.inversion_dependencias;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Servicio {
+public class RepositorioProducto {
 
     private static Connection connection;
 
-    public Servicio() {
+    public RepositorioProducto() {
         initializarBaseDatos();
     }
 
-    public double calcularImpuestoProducto(Producto producto) {
+    public void guardar(Producto nuevoProducto) {
 
-        //Validar producto.
-        if (producto == null) return 0;
-
-        final double IMPUESTO = 0.19;
-        double impuestoProducto = producto.getPrecio() * IMPUESTO;
-        return impuestoProducto;
-    }
-
-    public boolean guardarProducto(Producto nuevoProducto) {
-
-        if(nuevoProducto == null) return false;
-
-        //Validar producto
-        String nombre = nuevoProducto.getNombre();
-
-        if (nuevoProducto.getProductoId() < 0 || nombre == null || nombre.isEmpty()) {
-            return false;
-        }
 
         String insertSQL = "INSERT INTO Product ( ProductId, Name, Price ) " +
-                            "VALUES (?, ?, ?)";
+                "VALUES (?, ?, ?)";
 
         try(PreparedStatement statement = connection.prepareStatement(insertSQL)) {
             statement.setInt(1, nuevoProducto.getProductoId());
@@ -42,14 +24,12 @@ public class Servicio {
             statement.setDouble(3, nuevoProducto.getPrecio());
 
             statement.executeUpdate();
-            return true;
         } catch (SQLException excepcion) {
             excepcion.printStackTrace();
-            return false;
         }
     }
 
-    public List<Producto> listarProductos() {
+    public List<Producto> listar() {
 
         List<Producto> productos = new ArrayList<>();
 
@@ -63,8 +43,8 @@ public class Servicio {
             {
 
                 Producto producto = new Producto(results.getInt("ProductId"),
-                                            results.getString("Name"),
-                                            results.getDouble("Price"));
+                        results.getString("Name"),
+                        results.getDouble("Price"));
                 productos.add(producto);
             }
         } catch (SQLException exception) {
