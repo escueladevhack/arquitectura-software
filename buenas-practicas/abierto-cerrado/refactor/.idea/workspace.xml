@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e759afc9-8078-4692-8c9d-b7fee4093ae4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../patrones-diseno/metodo-fabrica/src/main/java/curso/patrones/metodo_fabrica/CalculoEnvio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../patrones-diseno/metodo-fabrica/src/main/java/curso/patrones/metodo_fabrica/CreadorEnvio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../patrones-diseno/metodo-fabrica/src/main/java/curso/patrones/metodo_fabrica/GeneradorCreadorEnvio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../patrones-diseno/metodo-fabrica/src/main/java/curso/patrones/metodo_fabrica/Orden.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../patrones-diseno/metodo-fabrica/src/main/java/curso/patrones/metodo_fabrica/Pais.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../patrones-diseno/metodo-fabrica/src/main/java/curso/patrones/metodo_fabrica/Tienda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../patrones-diseno/metodo-fabrica/src/main/java/curso/patrones/metodo_fabrica/envio/CalculoEnvioColombia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../patrones-diseno/metodo-fabrica/src/main/java/curso/patrones/metodo_fabrica/envio/CalculoEnvioMexico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../patrones-diseno/metodo-fabrica/src/main/java/curso/patrones/metodo_fabrica/envio/CalculoEnvioPeru.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../patrones-diseno/metodo-fabrica/src/main/java/curso/patrones/metodo_fabrica/fabrica/CreadorEnvioColombia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../patrones-diseno/metodo-fabrica/src/main/java/curso/patrones/metodo_fabrica/fabrica/CreadorEnvioMexico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../patrones-diseno/metodo-fabrica/src/main/java/curso/patrones/metodo_fabrica/fabrica/CreadorEnvioPeru.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abierto-cerrado-refactor.iml" beforeDir="false" />
-    </list>
+    <list default="true" id="e759afc9-8078-4692-8c9d-b7fee4093ae4" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,6 +14,7 @@
     <session id="1508330140">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.opened" value="2" />
@@ -179,10 +165,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -300,7 +285,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="UI Designer" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
